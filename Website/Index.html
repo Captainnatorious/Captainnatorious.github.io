@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="main.css" />
+		 <title>Video Game Mania</title>
+		 <script>
+
+		 function banner(){
+
+		 	var text = confirm("What you want?");
+		 	return text;
+
+		 }
+
+		 function answer(){
+		 	var radio = document.getElementsByName("trivia")
+		 	var selection = false;
+		 	var message = "";
+		 	for( var i = 0; i < radio.length; i++) {
+			if(radio[i].value == "yes" && radio[i].checked == true) {
+			selection = true;
+			} //end if statement
+			} //end for loop			
+			if(selection == true) {
+				message = message + "<b><p style='color:green'>YAHOOOO!</p></b>";
+			} else {
+				message = message + "<b><p style='color:red'>NEIN!</p></b>";
+			}
+			document.getElementById("response").innerHTML = message;
+
+
+		 }
+
+		 </script>	 	
+	</head>
+	<body id="background">
+
+		<a onclick="return banner()" href="https://www.youtube.com/watch?v=NmbflJhPvWg">
+
+		<header id="banner"><span class="header"></span>Video Game Mania</header>
+
+		</a>
+		<nav>
+			<ul id="navmenu">
+				<li class="navitem"> <a href="Videos.html">Videos</a></li>
+				<li class="navitem"> <a href="Games.html">Games</a></li>
+				<li class="navitem"> <a href="Merchandise.html">Merchandise</a></li>
+			</ul>
+		</nav>
+
+		<div class="rightside">
+
+			<iframe width="400" height="200" src="https://www.youtube.com/watch?v=o-QTsRAz1Bo?rel=o" frameborder="0" allowfullscreen>
+			</iframe>
+
+				<div class="Trivia">
+		<h2>Video Game Trivia Question</h2>
+			<p>Which game came out first?</p>
+		 <form>
+		 	<div id="response"></div>
+		 	
+		 	
+	 		<input type="radio" name="trivia" value="no">Halo:CE<br/>
+	 		 <input type="radio" name="trivia" value="no">DOOM<br/>
+	  		 <input type="radio" name="trivia" value="yes">Super Mario Bros<br/>
+	 		<input type="radio" name="trivia" value="no">Call of Duty<br/>
+			 <br/>
+	 		<input onclick="answer()" id="button" type="button" value="The Hammer of Truth"/>
+		 </form>
+		</div>
+
+		</div> <!-- Ending Right Side Div Tag -->
+
+		<div class="leftside"> 
+
+			<h1>The Ultimate Gaming Brawl</h1>
+			<p class="paragraph">
+	 		 <strong>Worlds collide in this spectacular spectacle of pure gaming <u>TESTOSTERONE</u>.</strong>
+				<br/><br/>
+			  <strong>You think SMASH is <i>insane</i> with crossovers, its got nothing on <u>THIS!</u></strong>
+			</p>
+			<div class="wrap-list">
+
+		<ul>
+	 		<li class="list">Variety of gaming icons</li>
+	  		 <li class="list">Only one victor can come out alive</li>
+	 		<li class="list">Pure carnage at its best</li>
+		</ul>
+			</div>
+
+			<audio width="400" height="220" controls>
+			 <source src="https://halo.bungie.org/misc/h2dialogue/arbiter/arbiter1_20050416.mp3" type="audio/mpeg">
+			 Your browser does not support HTML 5 audio.
+			</audio>
+
+		</div> <!-- Ending Left Side Div Tag -->
+
+		<div class="clearfloat"></div>
+
+			
+		</br>
+	 	 <img width="45%" src="https://i.redd.it/1r670izm9h811.png"/>
+	 	 <img width="40%" src="https://pbs.twimg.com/media/DU6e3nUVMAEh-DL.png"/>
+		<hr/>
+		 <center>Steven <a href="https://www.youtube.com/user/videogamedunkey"><strong>Enjoy some Dunkey</strong></a></center>
+
+		 <footer id="footer">Created by the Overlord STEVEN STOCKWELL</footer>
+
+	</body>
+</html>
